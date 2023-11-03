@@ -1,22 +1,31 @@
 version: "3.8"
 
-services: 
-  app:
-    build: 
-      context: .
+services:
+  web_app:
+    build:
+      context: ./frontend
       dockerfile: Dockerfile
     ports: 
-      - 8080:8080
+      - 3000:3000
     volumes: 
-      - .:/app
-      - '/app/node_modules'
-    depends_on: 
+      - .:/app/frontend
+      - '/app/frontend/node_modules'
+
+  api_app:
+    build:
+      context: ./backend
+      dockerfile: Dockerfile
+    ports:
+      - 8080:8080
+    volumes:
+      - .:/app/backend
+      - '/app/backend/node_modules'
+    depends_on:
       - mysql_server
-    command: npm start 
 
   mysql_server:
     image: mysql:8.0
-    environment: 
+    environment:
       - MYSQL_DATABASE=test_db
       - MYSQL_USER=dan
       - MYSQL_PASSWORD=secret

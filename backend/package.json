@@ -6,7 +6,9 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "nodemon server.js",
-    "start1": "nodemon authServer.js"
+    "start1": "nodemon authServer.js",
+    "dev": "nodemon server.js"
+
   },
   "keywords": [],
   "author": "",
