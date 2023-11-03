@@ -1,8 +1,8 @@
-const db = require("../models");
+// const db = require("../models");
 //create main model
 
-const Product = db.products;
-const Review = db.reviews;
+// const Product = db.products;
+// const Review = db.reviews;
 
 // main work
 
