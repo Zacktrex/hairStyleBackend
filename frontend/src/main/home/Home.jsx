@@ -1,6 +1,5 @@
 import Post from "../post";
 import { useEffect, useState } from "react";
-import ImageUpload from "./UploadImage";
 import Header from "../header";
 
 export default function Home() {

@@ -29,6 +29,7 @@ function ImageUpload() {
     } catch (error) {
       console.error(error);
     }
+    setSelectedImage(null);
   };
 
   return (
@@ -40,20 +41,23 @@ function ImageUpload() {
         accept="image/*"
         onChange={handleImageChange}
       />
-      <button
-        className="bg-blue-500 hover:bg-indigo-600 text-white font-bold py-2 px-4 rounded"
-        id="uploadButton"
-        onClick={() => document.getElementById("fileInput").click()}
-      >
-        Upload Image
-      </button>
+      {!selectedImage ? (
+        <button
+          className="bg-blue-500 hover:bg-indigo-600 text-white font-bold py-2 px-4 rounded"
+          id="uploadButton"
+          onClick={() => document.getElementById("fileInput").click()}
+        >
+          Upload Image
+        </button>
+      ) : (
+        <button
+          className="bg-indigo-600 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded"
+          onClick={handleImageUpload}
+        >
+          Submit
+        </button>
+      )}
 
-      <button
-        className="bg-indigo-600 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded"
-        onClick={handleImageUpload}
-      >
-        Submit
-      </button>
       {/* {selectedImage && (
         <img
           src={URL.createObjectURL(selectedImage)}
