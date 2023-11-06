@@ -6,7 +6,7 @@ export default function Header() {
       <nav className="bg-white py-2 md:py-4">
         <div className="container px-4 mx-auto md:flex md:items-center">
           <div className="flex justify-between items-center">
-            <a href="#" className="font-bold text-xl text-indigo-600">
+            <a href="/home" className="font-bold text-xl text-indigo-600">
               HS
             </a>
             <button
@@ -22,7 +22,7 @@ export default function Header() {
             id="navbar-collapse"
           >
             <a
-              href="#"
+              href="/home"
               className="p-2 lg:px-4 md:mx-2 text-white rounded bg-indigo-600"
             >
               Home
