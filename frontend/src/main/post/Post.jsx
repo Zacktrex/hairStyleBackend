@@ -11,17 +11,41 @@ export default function Post(props) {
         }}
       >
         <header style={{ padding: "5px" }}>Your hair Style</header>
-        <img
-          style={{
-            padding: "5px",
-            width: "150px",
-            height: "150px",
-            objectFit: "cover",
-            objectPosition: "50% 50%",
-          }}
-          src={`http://localhost:8080/uploads/${props.file}`}
-          alt=""
-        />
+        <div style={{ display: "flex" }}>
+          <img
+            style={{
+              padding: "5px",
+              width: "150px",
+              height: "150px",
+              objectFit: "cover",
+              objectPosition: "50% 50%",
+            }}
+            src={`http://localhost:8080/uploads/${props.file}`}
+            alt=""
+          />
+          <img
+            style={{
+              padding: "5px",
+              width: "150px",
+              height: "150px",
+              objectFit: "cover",
+              objectPosition: "50% 50%",
+            }}
+            src={`http://localhost:8080/uploads/${props.file}`}
+            alt=""
+          />
+          <img
+            style={{
+              padding: "5px",
+              width: "150px",
+              height: "150px",
+              objectFit: "cover",
+              objectPosition: "50% 50%",
+            }}
+            src={`http://localhost:8080/uploads/${props.file}`}
+            alt=""
+          />
+        </div>
       </div>
     </>
   );
