@@ -1,6 +1,7 @@
 import Post from "../post";
 import { useEffect, useState } from "react";
 import Header from "../header";
+import InputBox from "../box";
 
 export default function Home() {
   const [fileList, setFileList] = useState([]);
@@ -23,7 +24,8 @@ export default function Home() {
   return (
     <>
       <Header />
-      <div style={{ padding: "0px 10%" }}>
+      <InputBox/>
+      <div style={{  }}>
         
         {isLoading ? (
           <p>Loading...</p>
