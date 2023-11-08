@@ -2,6 +2,7 @@ import Post from "../post";
 import { useEffect, useState } from "react";
 import Header from "../header";
 import InputBox from "../box";
+import MultiSelectCheckbox from "../checkBox";
 
 export default function Home() {
   const [fileList, setFileList] = useState([]);
@@ -25,6 +26,7 @@ export default function Home() {
     <>
       <Header />
       <InputBox/>
+      <MultiSelectCheckbox/>
       <div style={{  }}>
         
         {isLoading ? (
