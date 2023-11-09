@@ -3,6 +3,8 @@ import { useEffect, useState } from "react";
 import Header from "../header";
 import InputBox from "../box";
 import MultiSelectCheckbox from "../checkBox";
+import ImageUpload from "./UploadImage";
+import "./home.css";
 
 export default function Home() {
   const [fileList, setFileList] = useState([]);
@@ -25,9 +27,10 @@ export default function Home() {
   return (
     <>
       <Header />
-      <InputBox/>
-      <MultiSelectCheckbox/>
-      <div style={{  }}>
+      <ImageUpload/>
+      {/* <InputBox/>
+      <MultiSelectCheckbox/> */}
+      <div className="flex-container">
         
         {isLoading ? (
           <p>Loading...</p>

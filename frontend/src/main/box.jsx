@@ -24,7 +24,7 @@ function InputBox() {
   }, []);
 
   return (
-    <div>
+    <div style={{marginTop:5}}>
       <input
       id='test'
         ref={inputRef}

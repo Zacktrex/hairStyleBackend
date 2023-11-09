@@ -1,8 +1,8 @@
 export default function Post(props) {
   return (
     <>
-      <div class="flex flex-wrap">
-        <div class="w-full sm:w-1/2 md:w-1/3 lg:w-1/4 xl:w-1/6 mb-4 bg-green-500">
+      <div >
+        <div >
           {" "}
           <img
             style={{
