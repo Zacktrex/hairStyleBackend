@@ -27,11 +27,10 @@ export default function Home() {
   return (
     <>
       <Header />
-      <ImageUpload/>
+      <ImageUpload />
       {/* <InputBox/>
       <MultiSelectCheckbox/> */}
       <div className="flex-container">
-        
         {isLoading ? (
           <p>Loading...</p>
         ) : (

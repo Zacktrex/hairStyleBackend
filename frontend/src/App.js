@@ -7,12 +7,11 @@ import SignUp from "./main/signUp";
 function App() {
   return (
     <BrowserRouter>
-    <Routes>
-      <Route path="/" element={<SignUp />}></Route>
-      <Route path="home" element={<Home />}></Route>
-      <Route path="login" element={<Login />}></Route>
-    </Routes>
-
+      <Routes>
+        <Route path="/" element={<SignUp />}></Route>
+        <Route path="home" element={<Home />}></Route>
+        <Route path="login" element={<Login />}></Route>
+      </Routes>
     </BrowserRouter>
   );
 }
