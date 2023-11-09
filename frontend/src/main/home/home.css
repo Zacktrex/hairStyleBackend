@@ -8,6 +8,7 @@
   flex-wrap: wrap;
   font-size: 30px;
   text-align: center;
+  justify-content: space-evenly;
 }
 
 .flex-item-left {
