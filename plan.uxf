@@ -1,7 +1,7 @@
-<diagram program="umletino" version="15.1"><zoom_level>10</zoom_level><element><id>UMLClass</id><coordinates><x>150</x><y>120</y><w>140</w><h>30</h></coordinates><panel_attributes>Consumer</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>970</x><y>120</y><w>140</w><h>30</h></coordinates><panel_attributes>Service Provider</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>280</x><y>110</y><w>710</w><h>50</h></coordinates><panel_attributes>lt=-
+<diagram program="umletino" version="15.1"><zoom_level>12</zoom_level><element><id>UMLClass</id><coordinates><x>72</x><y>12</y><w>168</w><h>36</h></coordinates><panel_attributes>Consumer</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>1056</x><y>12</y><w>168</w><h>36</h></coordinates><panel_attributes>Service Provider</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>228</x><y>0</y><w>852</w><h>60</h></coordinates><panel_attributes>lt=-
 m1=0..n
 m2=0..1
-Consume Services from &gt;</panel_attributes><additional_attributes>690;20;11;22</additional_attributes></element><element><id>UMLClass</id><coordinates><x>510</x><y>220</y><w>280</w><h>190</h></coordinates><panel_attributes>- we provide Menu with various option or styles 
+Consume Services from &gt;</panel_attributes><additional_attributes>690;20;11;22</additional_attributes></element><element><id>UMLClass</id><coordinates><x>72</x><y>120</y><w>1176</w><h>444</h></coordinates><panel_attributes>- we provide Menu with various option or styles 
 for client to select from.
 -
 - like a Menu option.
@@ -15,5 +15,16 @@ in Menu. which they can customize it.
 -
 - consumer will have clear idea that what kind
  of service they want and which are available.
-</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>630</x><y>120</y><w>50</w><h>120</h></coordinates><panel_attributes>lt=&lt;-
-m1=0..n</panel_attributes><additional_attributes>10;100;10;10</additional_attributes></element></diagram>
+-
+- benifit for stakeholder :(government , service provider ,
+ consumer , WE )
+- Government : track transaction and tax benifits on small MSME .
+- Service Provider : pulicity marketing , 
+gain consumer reach, live feedback review system , live online
+status of active shop, hire job seekers , become solo service provider, able tracks sales and bussiness growth useing analytics tool,
+take online service orders.
+- Consumer : varityof  Menu of services , live status of active
+services near by, able to track near by famous shops , discounts,
+able to get genuine shops , pre-booking or placing order, 
+able to submit review or feedback just after transaction for live status.</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>648</x><y>12</y><w>60</w><h>132</h></coordinates><panel_attributes>lt=&lt;-
+m1=0..n</panel_attributes><additional_attributes>10;90;10;10</additional_attributes></element></diagram>
